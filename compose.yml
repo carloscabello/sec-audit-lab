@@ -8,9 +8,7 @@ networks:
 
 services:
   dvwa:
-    build: .
     image: ghcr.io/digininja/dvwa:latest
-    pull_policy: always
     environment:
       - DB_SERVER=db
     depends_on:
